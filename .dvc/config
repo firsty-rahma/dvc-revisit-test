@@ -2,7 +2,7 @@
     remote = storage
 ['remote "storage"']
     url = s3://dvc-revisit
-    endpointurl = https://localhost:433
+    endpointurl = https://localhost:9000
     access_key_id = PkhyydI4g8hVKEMFZPD6
     secret_access_key = QsQ9cLt8366diBW84q7HeO9f2F7zJMw9D5E3YhMj
     ssl_verify = false
