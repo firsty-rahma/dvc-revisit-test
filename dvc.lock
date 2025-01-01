@@ -1,0 +1,25 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare.py data/data.xml
+    deps:
+    - path: data/data.xml
+      hash: md5
+      md5: 81ff01496286f6af8da86f5126643daf
+      size: 14452438
+      isexec: true
+    - path: src/prepare.py
+      hash: md5
+      md5: f54d670ac8a4f63206781fc31d1f2651
+      size: 2231
+      isexec: true
+    params:
+      params.yaml:
+        prepare.seed: 20170428
+        prepare.split: 0.2
+    outs:
+    - path: data/prepared
+      hash: md5
+      md5: e6e6af4c9f7895ebea2e4b99c09f927b.dir
+      size: 8442796
+      nfiles: 2
